@@ -1,4 +1,4 @@
-sut1:
+sut:
   build: .
   dockerfile: Dockerfile.test1
   links:
