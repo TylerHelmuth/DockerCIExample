@@ -1,6 +1,7 @@
 sut:
-  build: .
-  dockerfile: Dockerfile.test
+  build:
+    context: .
+    dockerfile: Dockerfile.test1
   links:
     - web
 web:
