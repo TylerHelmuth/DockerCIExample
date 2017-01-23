@@ -4,6 +4,6 @@ RUN apt-get update && apt-get install -yq curl && apt-get clean
 
 WORKDIR /app
 
-ADD test.sh /app/test.sh
+ADD test1.sh /app/test1.sh
 
-CMD ["bash", "test.sh"]
+CMD ["bash", "test1.sh"]

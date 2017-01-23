@@ -1,6 +1,11 @@
-sut:
+sut1:
   build: .
-  dockerfile: Dockerfile.test
+  dockerfile: Dockerfile.test1
+  links:
+    - web
+sut2:
+  build: .
+  dockerfile: Dockerfile.test2
   links:
     - web
 web:

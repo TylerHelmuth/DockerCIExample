@@ -9,6 +9,7 @@ def hello():
     visits = redis.incr('counter')
     html = "<h3>Hello World!</h3>" \
            "<b>Visits:</b> {visits}" \
+           "<b>New Addition</b>" \
            "<br/>"
     return html.format(visits=visits)
 
